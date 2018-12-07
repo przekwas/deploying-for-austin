@@ -1,0 +1,223 @@
+
+/* ================== App Themes & Utility Classes ================== */
+
+
+/* Themed Color Palette */
+.theme-bg-color-lightgrey {
+  background-color: #B4B4B4;
+}
+.theme-bg-color-black {
+  background-color: #1A1A1A;
+}
+.theme-bg-color-white {
+  background-color: #FEFEFE;
+}
+.theme-color-lightgrey {
+  color: #B4B4B4;
+}
+.theme-color-black {
+  color: #1A1A1A;
+}
+.theme-color-white {
+  color: #FEFEFE;
+}
+.App-link {
+  color: #61dafb;
+}
+
+
+/* Layout & Alignment Tools */
+.col-centered{
+  float: none;
+  margin: 0 auto;
+}
+
+
+/* ======================== Component Styles ======================== */
+
+
+/* App Global Styles */
+.App {
+  margin: 0;
+  text-align: center;
+}
+
+
+/* Material Icons */
+.material-icons{
+  padding-top: 25%;
+}
+
+
+/* Header Components */
+.App-header {
+  position: fixed;
+  top: 0px;
+  z-index: 2000;
+  width: 100%;
+  height: 10vh;
+  margin: 0;
+  background-color: #1A1A1A;
+  opacity: 0.9;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Alfa Slab One', cursive;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.app-title-wrapper {
+  height:8vh;
+}
+.app-title {
+  margin: 0 auto;
+}
+.App-logo {
+  height: 100%;
+}
+.header-logo-wrapper {
+  height: 8vh;
+  width:fit-content;
+}
+#header-menu-button {
+  background-color: #1A1A1A !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+#header-menu-icon-wrapper {
+  height: 8vh;
+  width: fit-content;
+  background-color:  color='1A1A1A';
+}
+#header-menu-icon {
+  padding-top: auto;
+}
+.header-dropdown-menu {
+  opacity: 1.1;
+  z-index: 1000;
+}
+
+.menu-dropdown-item {
+  width: 80%;
+  padding: 10% 0 10% 0;
+  margin: 0 10% 0 10%;
+  -webkit-transition-duration: 0.2s;
+  -webkit-transition-property: transform;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-duration: 0.2s;
+  transition-property: transform;
+  transition-timing-function: ease-in-out;
+}
+.menu-dropdown-item:hover {
+  width: 80%;
+  padding: 10% 0 10% 0;
+  margin: 0 10% 0 10%;
+  transform: scale(1.05, 1);
+  -webkit-transition-duration: 0.2s;
+  -webkit-transition-property: transform;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-duration: 0.2s;
+  transition-property: transform;
+  transition-timing-function: ease-in-out;
+}
+.menu-dropdown-divider {
+  margin: 0;
+}
+
+
+/* ======================= App Body Components ======================= */
+
+/* Main Body */
+#app-body {
+  position: fixed;
+  top: calc(0px + 10vh);
+  width: 100%;
+  height: 90vh;
+  overflow-y: auto;
+}
+
+#chirp-handler {
+  position: relative;
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+
+
+/* Input Components */
+#chirp-text-input {
+  height: 4em;
+}
+#chirp-submit-button {
+  background-color: #1A1A1A;
+  opacity: 0.9;
+}
+
+
+/* Chirp Card Components */
+.chirp-card {
+  width: 100%;
+  margin: 5px auto;
+}
+.chirp-card-title {
+  font-size: 1em;
+}
+.chirp-card-text {
+  font-size: 1.4em;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.chirp-wrapper {
+  position: relative;
+  width: 100%;
+  height: fit-content;
+}
+.chirp-hide {
+  transform: translate(0,-20px);
+  background-color: #FEFEFE;
+  color: #1A1A1A;
+  opacity: 0;
+  -webkit-transition-property: background-color font-size transform -webkit-transform color;
+  -webkit-transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-property: background-color color transform -webkit-transform color;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+}
+.chirp-show {
+  transform: translate(0, 0);
+  -webkit-transform: translate(0, 0);
+  background-color: #1A1A1A;
+  color: #FEFEFE;
+  opacity: 0.9;
+  -webkit-transition-property: background-color color transform -webkit-transform color;
+  -webkit-transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-property: transform -webkit-transformv color;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+}
+.chirp-show:hover {
+  transform: scale(1.05, 1.05);
+  border: 3px solid #282828;
+}
+
+/* ====================== Bootstrap Class Edits ====================== */
+
+
+.list-group-item {
+  padding: 0;
+  margin: 0.5em;
+  border: none;
+}
+.dropdown-menu {
+  font-family: 'Antic', sans-serif !important;
+}
+
+
+
+
+
+
